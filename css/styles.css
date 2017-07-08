@@ -1,2 +1,46 @@
+/*base layout*/
 body {
-  background-color: blue; }
+  background-color: #FF0000; }
+
+#square {
+  width: 600px;
+  height: 600px;
+  background-color: #ffff00;
+  position: relative; }
+  #square .circle {
+    background-color: blue;
+    width: 50%;
+    height: 50%;
+    border: 2px solid #002200;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    #square .circle #secSquare {
+      background-color: green;
+      width: 50%;
+      height: 50%;
+      border: 6px solid #002200;
+      border-radius: 0%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+
+h2 {
+  font-size: 32px; }
+
+/*navigation*/
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: #ffff00; }
+  nav ul {
+    list-style-type: none; }
+    nav ul li {
+      display: inline-block; }
+      nav ul li a {
+        padding: 20px;
+        text-decoration: none;
+        color: #002200; }
